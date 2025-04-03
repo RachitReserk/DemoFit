@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function TrainerHero({ trainer }: { trainer: any }) {
   return (
-    <section className="relative h-[60vh] md:h-[70vh] flex items-center">
+    <section className="relative h-[85vh] md:h-[70vh] flex items-center">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40 z-10"></div>
         <Image

@@ -3,7 +3,7 @@ import knowledge from "@/public/knowledge.avif"
 
 export default function KnowledgeHubHero() {
   return (
-    <section className="relative h-[55vh] md:h-[90vh] flex items-center">
+    <section className="relative h-[70vh] md:h-[90vh] flex items-center">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/70 z-10"></div>
         <Image

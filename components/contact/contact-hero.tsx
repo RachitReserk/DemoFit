@@ -3,7 +3,7 @@ import contact from "@/public/contact.avif"
 
 export default function ContactHero() {
   return (
-    <section className="relative h-[55vh] md:h-[90vh] flex items-center">
+    <section className="relative h-[70vh] md:h-[90vh] flex items-center">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         <Image
