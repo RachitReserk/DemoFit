@@ -1,4 +1,3 @@
-//done
 "use client"
 
 import { useState, useEffect } from "react"
@@ -35,15 +34,18 @@ export default function HeroSection() {
         <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">
           Manhattan's premier luxury fitness experience, where science meets strength for transformative results.
         </p>
-        <Link
-  href="/assessment"
-  className="btn-primary text-sm sm:text-base md:text-lg px-4 py-2 sm:px-6 sm:py-3 whitespace-nowrap"
->
-  Schedule Complimentary Assessment
-</Link>
+        
+        {/* Button Wrapper */}
+        <div className="mt-4 sm:mt-6">
+          <Link
+            href="/assessment"
+            className="btn-primary text-sm sm:text-base md:text-lg px-4 py-2 sm:px-6 sm:py-3 whitespace-nowrap"
+          >
+            Schedule Complimentary Assessment
+          </Link>
+        </div>
 
       </div>
     </section>
   )
 }
-

@@ -32,7 +32,7 @@ export default function Header() {
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-black/90 py-2" : "bg-transparent py-4"}`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="relative z-10">
           <h1 className="text-2xl md:text-3xl font-bold tracking-wider">
             <span className="block text-center">AESTHETIC</span>
@@ -41,34 +41,34 @@ export default function Header() {
         </Link>
 
         {/* Mobile menu button */}
-        <button className="md:hidden z-10" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        <button className="lg:hidden z-10" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
+          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
-          <Link href="/about" className="hover:gold-text transition-colors">
+        <nav className="hidden lg:flex items-center gap-6">
+          <Link href="/about" className="hover:text-gold transition-colors">
             About
           </Link>
-          <Link href="/trainers" className="hover:gold-text transition-colors">
+          <Link href="/trainers" className="hover:text-gold transition-colors">
             Our Trainers
           </Link>
-          <Link href="/services" className="hover:gold-text transition-colors">
+          <Link href="/services" className="hover:text-gold transition-colors">
             Services
           </Link>
-          <Link href="/locations" className="hover:gold-text transition-colors">
+          <Link href="/locations" className="hover:text-gold transition-colors">
             Locations
           </Link>
-          <Link href="/knowledge-hub" className="hover:gold-text transition-colors">
+          <Link href="/knowledge-hub" className="hover:text-gold transition-colors">
             Knowledge Hub
           </Link>
-          <Link href="/contact" className="hover:gold-text transition-colors">
+          <Link href="/contact" className="hover:text-gold transition-colors">
             Contact
           </Link>
         </nav>
 
         {/* Book Button */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Link href="/booking" className="btn-primary">
             Book Now
           </Link>
@@ -76,7 +76,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="fixed inset-0 bg-black flex flex-col justify-center items-center md:hidden">
+          <div className="fixed inset-0 bg-black flex flex-col justify-center items-center lg:hidden">
             <nav className="flex flex-col items-center gap-6 text-xl">
               <Link href="/about" onClick={() => setIsMenuOpen(false)}>
                 About
@@ -107,10 +107,10 @@ export default function Header() {
                   rel="noopener noreferrer"
                   aria-label="Instagram"
                 >
-                  <Instagram size={24} />
+                  <Instagram size={28} />
                 </Link>
                 <Link href="mailto:info@aestheticlab.nyc" aria-label="Email">
-                  <Mail size={24} />
+                  <Mail size={28} />
                 </Link>
                 <Link
                   href="https://twitter.com/aestheticlab"
@@ -118,7 +118,7 @@ export default function Header() {
                   rel="noopener noreferrer"
                   aria-label="Twitter"
                 >
-                  <Twitter size={24} />
+                  <Twitter size={28} />
                 </Link>
               </div>
             </nav>
@@ -128,4 +128,3 @@ export default function Header() {
     </header>
   )
 }
-
