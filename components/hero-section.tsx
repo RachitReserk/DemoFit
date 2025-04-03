@@ -37,12 +37,12 @@ export default function HeroSection() {
         
         {/* Button Wrapper */}
         <div className="mt-4 sm:mt-6">
-          <Link
-            href="/assessment"
-            className="btn-primary text-sm sm:text-base md:text-lg px-4 py-2 sm:px-6 sm:py-3 whitespace-nowrap"
-          >
-            Schedule Complimentary Assessment
-          </Link>
+        <Link
+  href="/assessment"
+  className="btn-primary text-xs sm:text-sm md:text-lg px-3 py-2 sm:px-6 sm:py-3 text-center"
+>
+  Schedule Complimentary Assessment
+</Link>
         </div>
 
       </div>
